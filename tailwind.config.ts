@@ -9,12 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "photo": "url('../../public/primeira_foto.png')",
       },
+      // backgroundSize: {
+      //   "70%": "70%"
+      // },
       colors: {
         "azul-escuro": "#011F38",
+        "azul-semi-escuro": "#042e51",
+        "verde": "#40BD52",
       }
     },
   },

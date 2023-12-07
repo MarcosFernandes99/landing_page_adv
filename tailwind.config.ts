@@ -20,6 +20,7 @@ const config: Config = {
         "azul-semi-escuro": "#042e51",
         "verde": "#40BD52",
         "dourado": "#E8CD88",
+        "azul-claro": "#00919B",
       },
       spacing:{
         "55%": "55%"

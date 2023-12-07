@@ -24,9 +24,9 @@ export default function Home() {
           </div>
         </section>
         <section className="flex h-4/5 bg-azul-semi-escuro">
-          <div className="flex flex-col w-2/5 h-full items-start ml-36 text-white justify-center">
+          <div className="flex flex-col w-2/5 h-full items-start ml-36 text-white justify-center text-justify">
             <span className="mb-12">LOGO</span>
-            <span className="mb-3 text-4xl">
+            <span className="mb-3 text-4xl font-bold">
               SOLICITE O AUMENTO DA SUA APOSENTADORIA AGORA!
             </span>
             <span className="mb-3 text-base">
@@ -37,7 +37,29 @@ export default function Home() {
               Fale conosco pelo Whatsapp
             </button>
           </div>
-          <div className="flex h-full w-3/5 bg-photo bg-contain bg-no-repeat bg-center"></div>
+          <div className="flex h-full w-3/5 bg-photo_header bg-contain bg-no-repeat bg-center"></div>
+        </section>
+        <section className="flex w-full h-4/5">
+          <div className="flex w-3/5 h-full bg-photo bg-contain bg-no-repeat bg-center"></div>
+          <div className="flex flex-col w-55% text-justify text-azul-escuro">
+            <span className="w-4/5 font-bold mt-24 text-2xl">
+              A  <span className="bg-azul-escuro text-dourado">Revisão da vida</span> toda foi aprovada pelo STF e agora é definitivo,
+              milhares de aposentados e pensionistas, poderão ter direito a
+              revisar suas aposentadorias.
+            </span>
+            <span className="w-4/5 mt-6">
+              Em certos casos, a revisão pode aumentar em mais de 3 (três) vezes
+              o valor do benefício;
+            </span>
+            <span className="w-4/5 mt-6">
+              Existem casos que sai de um salário mínimo, para uma aposentadoria
+              de <span className="font-bold">R$ 5.000,00 mensais, imagine só ?</span>
+            </span>
+            <span className="w-4/5 mt-6">
+              Mas não são todos que tem direito, <span className="font-bold">será necessário uma avaliação.</span>
+            </span >
+            <button className="mt-4 flex items-start bg-verde text-white w-1/5 justify-center p-2 rounded-lg">Fazer Avaliação</button>
+          </div>
         </section>
       </main>
     </>

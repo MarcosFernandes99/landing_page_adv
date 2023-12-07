@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "photo": "url('../../public/primeira_foto.png')",
+        "photo_header": "url('../../public/primeira_foto.png')",
+        "photo": "url('../../public/segunda_foto.png')",
       },
       // backgroundSize: {
       //   "70%": "70%"
@@ -18,6 +19,10 @@ const config: Config = {
         "azul-escuro": "#011F38",
         "azul-semi-escuro": "#042e51",
         "verde": "#40BD52",
+        "dourado": "#E8CD88",
+      },
+      spacing:{
+        "55%": "55%"
       }
     },
   },

@@ -11,6 +11,7 @@ const config: Config = {
       backgroundImage: {
         "photo_header": "url('../../public/primeira_foto.png')",
         "photo": "url('../../public/segunda_foto.png')",
+        "photo_about": "url('../../public/terceira_foto.jpg')",
       },
       // backgroundSize: {
       //   "70%": "70%"
@@ -23,7 +24,7 @@ const config: Config = {
         "azul-claro": "#00919B",
       },
       spacing:{
-        "55%": "55%"
+        "50%": "50%"
       }
     },
   },

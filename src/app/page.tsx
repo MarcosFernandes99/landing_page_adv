@@ -40,8 +40,8 @@ export default function Home() {
           <div className="flex h-full w-3/5 bg-photo_header bg-contain bg-no-repeat bg-center"></div>
         </section>
         <section className="flex w-full h-4/5">
-          <div className="flex w-3/5 h-full mt-20 bg-photo bg-contain bg-no-repeat bg-center"></div>
-          <div className="flex flex-col w-55% text-justify text-azul-escuro justify-center">
+          <div className="flex w-1/2 h-full mt-20 bg-photo bg-contain bg-no-repeat bg-center"></div>
+          <div className="flex flex-col w-50% text-justify text-azul-escuro justify-center">
             <span className="w-4/5 font-bold text-2xl">
               A{" "}
               <span className="bg-azul-escuro text-dourado">
@@ -85,14 +85,52 @@ export default function Home() {
             </p>
           </div>
           <div className="flex w-full gap-4 mt-12 justify-center text-white">
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">Auxílio Acidente</span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">Aposentadoria por idade ou invalidez</span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">Auxílio Doença</span>
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+              Auxílio Acidente
+            </span>
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+              Aposentadoria por idade ou invalidez
+            </span>
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+              Auxílio Doença
+            </span>
           </div>
-          <button className="bg-verde text-white p-4 mt-12 rounded-xl">Falar com um advogado agora</button>
+          <button className="bg-verde text-white p-4 mt-12 rounded-xl">
+            Falar com um advogado agora
+          </button>
         </section>
-        <section className="h-96 w-full">
-
+        <section className="flex h-screen w-full">
+          <div className="h-3/4 w-2/4 bg-photo_about bg-contain bg-no-repeat mt-4"></div>
+          <div className="h-3/4 w-2/4 justify-center p-4 text-justify flex flex-col text-azul-escuro">
+            <h3 className="ml-20 text-3xl font-bold">Sobre nós</h3>
+            <span className="w-3/4 ml-20 mt-4">
+              O{" "}
+              <span className="font-bold bg-dourado">
+                NOME DO ESCRITÓRIO, OAB.655.123,
+              </span>{" "}
+              é o escritório especializado em Direito do Trabalho e Direito
+              Previdenciário;
+            </span>
+            <span className="w-3/4 ml-20 mt-4">
+              Temos nosso escritório{" "}
+              <span className="font-bold">
+                localizado em São Bernardo do Campo e em São Paulo,
+              </span>{" "}
+              com atuação presencial e online para acelerar a resolução das
+              causas e prezar pelo conforto dos nossos clientes.
+            </span>
+            <span className="w-3/4 ml-20 mt-4">
+              Além do aparato técnico e conhecimento para enfrentamento de
+              problemas judiciais, temos por objetivo, evitar o surgimento de
+              novos processos, atuando na prevenção, oferencendo todo o suporte
+              para que o cliente possa viver em sociedade, exercendo seu direito
+              e, sabendo os limites e reflexos de sua atuação, melhorando as
+              relações sociais e pacificando os conflitos.
+            </span>
+            <button className="flex ml-20 bg-verde text-white mt-8 p-4 rounded-xl w-72 justify-center">
+              Falar com um advogado agora
+            </button>
+          </div>
         </section>
       </main>
     </>

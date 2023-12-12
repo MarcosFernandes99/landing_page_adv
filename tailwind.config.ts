@@ -12,6 +12,7 @@ const config: Config = {
         "photo_header": "url('../../public/primeira_foto.png')",
         "photo": "url('../../public/segunda_foto.png')",
         "photo_about": "url('../../public/terceira_foto.jpg')",
+        "bg_forms": "url('../../public/bg_forms.jpg')"
       },
       // backgroundSize: {
       //   "70%": "70%"
@@ -25,6 +26,9 @@ const config: Config = {
       },
       spacing:{
         "50%": "50%"
+      },
+      boxShadow: {
+        
       }
     },
   },

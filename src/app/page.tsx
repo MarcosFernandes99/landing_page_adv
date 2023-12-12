@@ -1,4 +1,7 @@
 import "../app/globals.css";
+import Image from "next/image";
+import google from "../../public/google.png";
+import avaliacao from "../../public/avaliacao.png";
 
 export default function Home() {
   return (
@@ -99,8 +102,8 @@ export default function Home() {
             Falar com um advogado agora
           </button>
         </section>
-        <section className="flex h-screen w-full">
-          <div className="h-3/4 w-2/4 bg-photo_about bg-contain bg-no-repeat mt-4"></div>
+        <section className="flex h-3/4 w-full mt-12">
+          <div className="h-3/4 w-2/4 bg-photo_about bg-contain bg-no-repeat mt-4 bg-center"></div>
           <div className="h-3/4 w-2/4 justify-center p-4 text-justify flex flex-col text-azul-escuro">
             <h3 className="ml-20 text-3xl font-bold">Sobre nós</h3>
             <span className="w-3/4 ml-20 mt-4">
@@ -132,6 +135,85 @@ export default function Home() {
             </button>
           </div>
         </section>
+        <section className="h-3/4 w-full flex flex-col bg-azul-escuro items-center">
+          <h3 className="text-white font-bold text-3xl mt-16">
+            CLIENTES QUE APROVAM E INDICAM NOSSO TRABALHO
+          </h3>
+          <div className="flex gap-6 h-68 w-2/3 mt-12 justify-center">
+            <div className="flex flex-col w-56 bg-white rounded-2xl p-4">
+              <div className="flex w-full justify-between items-center">
+                <Image className="w-20" src={avaliacao} alt="estrelas"></Image>
+                <Image className="h-8 w-8 " src={google} alt="google"></Image>
+              </div>
+              <span className="flex-shrink-0 bg-white text-azul-escuro p-2 h-40 overflow-y-auto">
+                Precisei para auxiliar com um cliente do escritório. Me atendeu
+                rapidamente e com muita eficiência.
+              </span>
+              <div className="flex w-full justify-between items-center mt-4">
+                <span className="bg-red-600 w-8 h-8 rounded-full text-center text-white p-1">
+                  J
+                </span>
+                <span className="font-bold">João Dias</span>
+              </div>
+            </div>
+            <div className="flex flex-col w-56 bg-white rounded-2xl p-4">
+              <div className="flex w-full justify-between items-center">
+                <Image className="w-20" src={avaliacao} alt="estrelas"></Image>
+                <Image className="h-8 w-8 " src={google} alt="google"></Image>
+              </div>
+              <span className="flex-shrink-0 h-40 bg-white text-azul-escuro p-2">
+                Perfeito e eficaz.
+              </span>
+              <div className="flex w-full justify-between items-center mt-4">
+                <span className="bg-amber-500 w-8 h-8 rounded-full text-center text-white p-1">
+                  C
+                </span>
+                <span className="font-bold">Carla Santos</span>
+              </div>
+            </div>
+            <div className="flex flex-col w-56 bg-white rounded-2xl p-4">
+              <div className="flex w-full justify-between items-center">
+                <Image className="w-20" src={avaliacao} alt="estrelas"></Image>
+                <Image className="h-8 w-8 " src={google} alt="google"></Image>
+              </div>
+              <span className="flex-shrink-0 h-40 bg-white text-azul-escuro p-2">
+                Muito atencioso! Muito competente e dedicado!
+              </span>
+              <div className="flex w-full justify-between items-center mt-4">
+                <span className="bg-green-500 w-8 h-8 rounded-full text-center text-white p-1">
+                  R
+                </span>
+                <span className="font-bold">Rodrigo Farias</span>
+              </div>
+            </div>
+            <div className="flex flex-col w-56 bg-white rounded-2xl p-4">
+              <div className="flex w-full justify-between items-center">
+                <Image className="w-20" src={avaliacao} alt="estrelas"></Image>
+                <Image className="h-8 w-8 " src={google} alt="google"></Image>
+              </div>
+              <span className="flex-shrink-0 h-40 bg-white text-azul-escuro p-2 overflow-y-auto">
+                Advogados competentes! Acompanham o processo pessoalmente e está
+                sempre explicando os andamentos.
+              </span>
+              <div className="flex w-full justify-between items-center mt-4">
+                <span className="bg-sky-500 w-8 h-8 rounded-full text-center text-white p-1">
+                  R
+                </span>
+                <span className="font-bold">Helena Souza</span>
+              </div>
+            </div>
+          </div>
+          <button className="text-white bg-verde p-4 rounded-xl mt-8">
+            Falar com um advogado agora
+          </button>
+        </section>
+        {/* <section className="h-3/4 w-full mt-20">
+          <div className="h-full bg-bg_forms bg-contain bg-no-repeat opacity-25">
+            <form className="" id="" action="">
+
+            </form>
+          </div>
+        </section> */}
       </main>
     </>
   );

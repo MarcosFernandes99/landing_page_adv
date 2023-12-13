@@ -207,13 +207,38 @@ export default function Home() {
             Falar com um advogado agora
           </button>
         </section>
-        {/* <section className="h-3/4 w-full mt-20">
-          <div className="h-full bg-bg_forms bg-contain bg-no-repeat opacity-25">
-            <form className="" id="" action="">
-
-            </form>
+        <section className="flex h-3/4 w-full mt-10 justify-center">
+          <div className="flex h-full w-11/12 p-4 text-azul-escuro bg-PowderBlue rounded-3xl">
+            <div className="flex flex-col w-1/2">
+              <span className="h-30 text-justify text-3xl font-bold p-4">
+                Nossa missão é assegurar que nossos clientes tenham o seu
+                benefício previdenciário estabelecido de maneira justa, através
+                de um acompanhamento jurídico de qualidade.
+              </span>
+              <form className="flex flex-col gap-2 w-5/6 p-4" id="" action="">
+                <input
+                  className="rounded-xl p-2"
+                  placeholder="Digite seu nome"
+                  type="text"
+                />
+                <input
+                  className="rounded-xl p-2"
+                  placeholder="Digite seu número de celular"
+                  type="text"
+                />
+                <input
+                  className="rounded-xl p-2"
+                  placeholder="Digite seu melhor E-mail"
+                  type="text"
+                />
+                <button className="bg-verde text-white p-2 mt-6 rounded-xl">
+                  Falar com um advogado
+                </button>
+              </form>
+            </div>
+            <div className=" flex w-1/2 h-full bg-forms bg-cover rounded-xl ml-6"></div>
           </div>
-        </section> */}
+        </section>
       </main>
     </>
   );

@@ -12,7 +12,7 @@ const config: Config = {
         "photo_header": "url('../../public/primeira_foto.png')",
         "photo": "url('../../public/segunda_foto.png')",
         "photo_about": "url('../../public/terceira_foto.jpg')",
-        "bg_forms": "url('../../public/bg_forms.jpg')"
+        "forms": "url('../../public/forms.jpg')",
       },
       // backgroundSize: {
       //   "70%": "70%"
@@ -23,12 +23,13 @@ const config: Config = {
         "verde": "#40BD52",
         "dourado": "#E8CD88",
         "azul-claro": "#00919B",
+        "PowderBlue": "#B0E0E6"
       },
       spacing:{
         "50%": "50%"
       },
       boxShadow: {
-        
+        "3xl": "-50px 50px 27px rgb(30,242,204),"
       }
     },
   },

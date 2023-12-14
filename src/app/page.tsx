@@ -2,39 +2,36 @@ import "../app/globals.css";
 import Image from "next/image";
 import google from "../../public/google.png";
 import avaliacao from "../../public/avaliacao.png";
+import logo from "../../public/LOGO.png";
 
 export default function Home() {
   return (
     <>
       <main className="h-screen">
         <section className="flex h-20 w-full p-1 bg-azul-escuro text-white">
-          <div className="flex h-full w-1/2 justify-start items-center">
-            <span className="mx-32">
-              LOGO
-              <img src="" alt="" />
-            </span>
+          <div className="flex h-full w-1/2 justify-start items-center ml-40">
             <button className="mr-8">Serviços</button>
             <button className="mr-8">Sobre Nós</button>
             <button>Contato</button>
           </div>
 
           <div className="flex h-full w-1/2 justify-end items-center">
-            <button className="mx-8">INSTA</button>
-            <button>FACE</button>
+            <button className="bg-insta h-7 w-7 bg-cover"></button>
+            <button className="mx-8 bg-face h-7 w-7 bg-cover"></button>
             <button className="mx-32 border border-white border-solid p-2 rounded-lg">
               Orçamento
             </button>
           </div>
         </section>
         <section className="flex h-4/5 bg-azul-semi-escuro">
-          <div className="flex flex-col w-2/5 h-full items-start ml-36 text-white justify-center text-justify">
-            <span className="mb-12">LOGO</span>
-            <span className="mb-3 text-4xl font-bold">
-              SOLICITE O AUMENTO DA SUA APOSENTADORIA AGORA!
+          <div className="flex flex-col w-2/5 h-full items-start ml-36 text-white justify-center">
+            <span className="mb-3 bg-logo w-40 h-40 bg-contain"></span>
+            <span className="mb-3 text-3xl font-bold">
+              PROTEJA SEUS BENEFÍCIOS AGORA COM NOSSA ASSESSORIA ESPECIALIZADA!
             </span>
             <span className="mb-3 text-base">
-              Somos advogados especialistas em direito previdenciário e podemos
-              te ajudar com a revisão da vida toda!
+              Somos advogados especialistas em direito do trabalho e podemos te
+              ajudar em garantir o seu direito.
             </span>
             <button className="bg-verde p-4 rounded-lg">
               Fale conosco pelo Whatsapp
@@ -45,29 +42,26 @@ export default function Home() {
         <section className="flex w-full h-4/5">
           <div className="flex w-1/2 h-full mt-20 bg-photo bg-contain bg-no-repeat bg-center"></div>
           <div className="flex flex-col w-50% text-justify text-azul-escuro justify-center">
-            <span className="w-4/5 font-bold text-2xl">
-              A{" "}
-              <span className="bg-azul-escuro text-dourado">
-                Revisão da vida
-              </span>{" "}
-              toda foi aprovada pelo STF e agora é definitivo, milhares de
-              aposentados e pensionistas, poderão ter direito a revisar suas
-              aposentadorias.
-            </span>
+            <span className="w-40 font-bold text-3xl">BENEFÍCIOS</span>
             <span className="w-4/5 mt-6">
-              Em certos casos, a revisão pode aumentar em mais de 3 (três) vezes
-              o valor do benefício;
-            </span>
-            <span className="w-4/5 mt-6">
-              Existem casos que sai de um salário mínimo, para uma aposentadoria
-              de{" "}
+              Contratar um advogado trabalhista oferece proteção legal contra{" "}
               <span className="font-bold">
-                R$ 5.000,00 mensais, imagine só ?
+                violações de direitos e práticas injustas no ambiente de
+                trabalho.;
               </span>
             </span>
             <span className="w-4/5 mt-6">
-              Mas não são todos que tem direito,{" "}
-              <span className="font-bold">será necessário uma avaliação.</span>
+              Um advogado trabalhista pode ajudar na{" "}
+              <span className="font-bold bg-dourado">
+                maximização de benefícios,
+              </span>{" "}
+              maximização de benefícios, assegurando que o cliente receba todos
+              os direitos e compensações adequados.
+            </span>
+            <span className="w-4/5 mt-6">
+              Profissionais experientes agilizam a resolução de conflitos,
+              evitando prolongamentos desnecessários e reduzindo o impacto
+              emocional e financeiro no cliente.
             </span>
             <button className="mt-4 flex items-start bg-verde text-white w-1/5 justify-center p-4 rounded-lg">
               Fazer Avaliação
@@ -81,21 +75,33 @@ export default function Home() {
             </p>
             <p className="text-white mt-2">
               Confie seu caso nas mãos de um advogado que saberá a melhor
-              maneira de te ajudar a ter seu benefício liberado.
+              maneira de te ajudar a ter seu direito garantido.
             </p>
             <p className="text-dourado font-bold underline mt-2">
-              Experiência comprovada em causas previdenciárias como:
+              Experiência comprovada em causas trabalhistas como:
             </p>
           </div>
           <div className="flex w-full gap-4 mt-12 justify-center text-white">
             <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
-              Auxílio Acidente
+              Recolhimento FGTS
             </span>
             <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
-              Aposentadoria por idade ou invalidez
+              Reconhecimento do vínculo empregarício
             </span>
             <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
-              Auxílio Doença
+              Pagamentos de horas extraordinárias
+            </span>
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+              Intervalo intrajornada
+            </span>
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+              Assédio moral
+            </span>
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+              Verbas atrasadas
+            </span>
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+              Acidente em serviço
             </span>
           </div>
           <button className="bg-verde text-white p-4 mt-12 rounded-xl">
@@ -109,15 +115,14 @@ export default function Home() {
             <span className="w-3/4 ml-20 mt-4">
               O{" "}
               <span className="font-bold bg-dourado">
-                NOME DO ESCRITÓRIO, OAB.655.123,
+                WILLIANS ADVOGADOS, OAB.-------,
               </span>{" "}
-              é o escritório especializado em Direito do Trabalho e Direito
-              Previdenciário;
+              é o escritório especializado em Direito do Trabalho;
             </span>
             <span className="w-3/4 ml-20 mt-4">
               Temos nosso escritório{" "}
               <span className="font-bold">
-                localizado em São Bernardo do Campo e em São Paulo,
+                localizado em São Paulo e Itapecerica da Serra,
               </span>{" "}
               com atuação presencial e online para acelerar a resolução das
               causas e prezar pelo conforto dos nossos clientes.
@@ -212,8 +217,8 @@ export default function Home() {
             <div className="flex flex-col w-1/2">
               <span className="h-30 text-justify text-3xl font-bold p-4">
                 Nossa missão é assegurar que nossos clientes tenham o seu
-                benefício previdenciário estabelecido de maneira justa, através
-                de um acompanhamento jurídico de qualidade.
+                direito trabalhista estabelecido de maneira justa, através de um
+                acompanhamento jurídico de qualidade.
               </span>
               <form className="flex flex-col gap-2 w-5/6 p-4" id="" action="">
                 <input

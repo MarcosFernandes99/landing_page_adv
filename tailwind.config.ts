@@ -13,6 +13,10 @@ const config: Config = {
         "photo": "url('../../public/segunda_foto.png')",
         "photo_about": "url('../../public/terceira_foto.jpg')",
         "forms": "url('../../public/forms.jpg')",
+        "logo": "url('../../public/logo.png')",
+        "insta": "url('../../public/insta.png')",
+        "face": "url('../../public/face.png')"
+        
       },
       // backgroundSize: {
       //   "70%": "70%"

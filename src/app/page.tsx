@@ -2,7 +2,10 @@ import "../app/globals.css";
 import Image from "next/image";
 import google from "../../public/google.png";
 import avaliacao from "../../public/avaliacao.png";
-import logo from "../../public/LOGO.png";
+import telefone from "../../public/telefone.png";
+import email from "../../public/email.png";
+import relogio from "../../public/relogio.png";
+import logoForms from "../../public/logo_forms.png";
 
 export default function Home() {
   return (
@@ -10,15 +13,20 @@ export default function Home() {
       <main className="h-screen">
         <section className="flex h-20 w-full p-1 bg-azul-escuro text-white">
           <div className="flex h-full w-1/2 justify-start items-center ml-40">
-            <button className="mr-8">Serviços</button>
-            <button className="mr-8">Sobre Nós</button>
-            <button>Contato</button>
+            <button className="mr-8 transition-transform transform hover:scale-110">
+              Serviços
+            </button>
+            <button className="mr-8 transition-transform transform hover:scale-110">
+              Sobre Nós
+            </button>
+            <button className="transition-transform transform hover:scale-110">
+              Contato
+            </button>
           </div>
-
           <div className="flex h-full w-1/2 justify-end items-center">
-            <button className="bg-insta h-7 w-7 bg-cover"></button>
-            <button className="mx-8 bg-face h-7 w-7 bg-cover"></button>
-            <button className="mx-32 border border-white border-solid p-2 rounded-lg">
+            <button className="bg-insta h-5 w-5 bg-cover transition-transform transform hover:scale-110"></button>
+            <button className="mx-8 bg-face h-5 w-5 bg-cover transition-transform transform hover:scale-110"></button>
+            <button className="mx-32 border border-white border-solid p-2 rounded-lg transition-transform transform hover:scale-110">
               Orçamento
             </button>
           </div>
@@ -33,7 +41,7 @@ export default function Home() {
               Somos advogados especialistas em direito do trabalho e podemos te
               ajudar em garantir o seu direito.
             </span>
-            <button className="bg-verde p-4 rounded-lg">
+            <button className="bg-verde p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
               Fale conosco pelo Whatsapp
             </button>
           </div>
@@ -63,7 +71,7 @@ export default function Home() {
               evitando prolongamentos desnecessários e reduzindo o impacto
               emocional e financeiro no cliente.
             </span>
-            <button className="mt-4 flex items-start bg-verde text-white w-1/5 justify-center p-4 rounded-lg">
+            <button className="mt-4 flex items-start bg-verde text-white w-1/5 justify-center p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
               Fazer Avaliação
             </button>
           </div>
@@ -82,29 +90,29 @@ export default function Home() {
             </p>
           </div>
           <div className="flex w-full gap-4 mt-12 justify-center text-white">
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
               Recolhimento FGTS
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
               Reconhecimento do vínculo empregarício
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
               Pagamentos de horas extraordinárias
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
               Intervalo intrajornada
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
               Assédio moral
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
               Verbas atrasadas
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center">
+            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
               Acidente em serviço
             </span>
           </div>
-          <button className="bg-verde text-white p-4 mt-12 rounded-xl">
+          <button className="bg-verde text-white p-4 mt-12 rounded-xl transition-transform transform hover:scale-105 duration-500">
             Falar com um advogado agora
           </button>
         </section>
@@ -135,7 +143,7 @@ export default function Home() {
               e, sabendo os limites e reflexos de sua atuação, melhorando as
               relações sociais e pacificando os conflitos.
             </span>
-            <button className="flex ml-20 bg-verde text-white mt-8 p-4 rounded-xl w-72 justify-center">
+            <button className="flex ml-20 bg-verde text-white mt-8 p-4 rounded-xl w-72 justify-center transition-transform transform hover:scale-105 duration-500">
               Falar com um advogado agora
             </button>
           </div>
@@ -185,7 +193,7 @@ export default function Home() {
                 Muito atencioso! Muito competente e dedicado!
               </span>
               <div className="flex w-full justify-between items-center mt-4">
-                <span className="bg-green-500 w-8 h-8 rounded-full text-center text-white p-1">
+                <span className="bg-green-500 w-8 h-8 rounded-full text-center text-white p-1 transition-transform transform hover:scale-105 duration-500">
                   R
                 </span>
                 <span className="font-bold">Rodrigo Farias</span>
@@ -208,7 +216,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="text-white bg-verde p-4 rounded-xl mt-8">
+          <button className="text-white bg-verde p-4 rounded-xl mt-8 transition-transform transform hover:scale-105 duration-500">
             Falar com um advogado agora
           </button>
         </section>
@@ -236,12 +244,55 @@ export default function Home() {
                   placeholder="Digite seu melhor E-mail"
                   type="text"
                 />
-                <button className="bg-verde text-white p-2 mt-6 rounded-xl">
+                <button className="bg-verde text-white p-2 mt-6 rounded-xl transition-transform transform hover:scale-105 duration-500">
                   Falar com um advogado
                 </button>
               </form>
             </div>
             <div className=" flex w-1/2 h-full bg-forms bg-cover rounded-xl ml-6"></div>
+          </div>
+        </section>
+        <section className="flex w-full h-40 bg-gelo mt-8 border-b-2 border-azul-escuro border-solid">
+          <div className="flex justify-around w-full p-6">
+            <div className="h-20 w-30 flex items-center">
+              <Image
+                className="h-8 w-8 mr-2"
+                src={telefone}
+                alt="telefone"
+              ></Image>
+              <div className="flex flex-col justify-center">
+                <span className="text-azul-escuro font-bold">
+                  Atendimento por telefone
+                </span>
+                <span className="text-cinza">(11) 9 9999-9999</span>
+              </div>
+            </div>
+            <div className="h-20 w-30 flex items-center">
+              <Image className="h-8 w-8 mr-2" src={email} alt="email"></Image>
+              <div className="flex flex-col justify-center">
+                <span className="text-azul-escuro font-bold">
+                  Atendimento por email
+                </span>
+                <span className="text-cinza">
+                  contato@williansadvogados.com.br
+                </span>
+              </div>
+            </div>
+            <div className="h-20 w-30 flex items-center">
+              <Image
+                className="h-8 w-8 mr-2"
+                src={relogio}
+                alt="relogio"
+              ></Image>
+              <div className="flex flex-col justify-center">
+                <span className="text-azul-escuro font-bold">
+                  Horário de atendimento
+                </span>
+                <span className="text-cinza">
+                  08h às 18h de seg. à sexta-feira
+                </span>
+              </div>
+            </div>
           </div>
         </section>
       </main>

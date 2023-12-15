@@ -16,7 +16,6 @@ const config: Config = {
         "logo": "url('../../public/logo.png')",
         "insta": "url('../../public/insta.png')",
         "face": "url('../../public/face.png')"
-        
       },
       // backgroundSize: {
       //   "70%": "70%"
@@ -27,7 +26,9 @@ const config: Config = {
         "verde": "#40BD52",
         "dourado": "#E8CD88",
         "azul-claro": "#00919B",
-        "PowderBlue": "#B0E0E6"
+        "PowderBlue": "#B0E0E6",
+        "gelo": "#F9F9F9",
+        "cinza": "#8F8F8F"
       },
       spacing:{
         "50%": "50%"

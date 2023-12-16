@@ -5,12 +5,14 @@ import avaliacao from "../../public/avaliacao.png";
 import telefone from "../../public/telefone.png";
 import email from "../../public/email.png";
 import relogio from "../../public/relogio.png";
-import logoForms from "../../public/logo_forms.png";
+import primeiraFoto from "../../public/primeira_foto.png"
+import logoFooter from "../../public/logo_footer.png"
+
 
 export default function Home() {
   return (
     <>
-      <main className="h-screen">
+      <main className="h-screen font-sans">
         <section className="flex h-20 w-full p-1 bg-azul-escuro text-white">
           <div className="flex h-full w-1/2 justify-start items-center ml-40">
             <button className="mr-8 transition-transform transform hover:scale-110">
@@ -24,8 +26,8 @@ export default function Home() {
             </button>
           </div>
           <div className="flex h-full w-1/2 justify-end items-center">
-            <button className="bg-insta h-5 w-5 bg-cover transition-transform transform hover:scale-110"></button>
-            <button className="mx-8 bg-face h-5 w-5 bg-cover transition-transform transform hover:scale-110"></button>
+            <button className="bg-insta h-5 w-5 bg-cover transition-transform transform hover:scale-125"></button>
+            <button className="mx-8 bg-face h-5 w-5 bg-cover transition-transform transform hover:scale-125"></button>
             <button className="mx-32 border border-white border-solid p-2 rounded-lg transition-transform transform hover:scale-110">
               Orçamento
             </button>
@@ -45,7 +47,9 @@ export default function Home() {
               Fale conosco pelo Whatsapp
             </button>
           </div>
-          <div className="flex h-full w-3/5 bg-photo_header bg-contain bg-no-repeat bg-center"></div>
+          <div className="flex h-full w-3/5">
+            <Image className="w-full object-contain" src={primeiraFoto} alt={"primeiraFoto"}></Image>
+          </div>
         </section>
         <section className="flex w-full h-4/5">
           <div className="flex w-1/2 h-full mt-20 bg-photo bg-contain bg-no-repeat bg-center"></div>
@@ -63,7 +67,7 @@ export default function Home() {
               <span className="font-bold bg-dourado">
                 maximização de benefícios,
               </span>{" "}
-              maximização de benefícios, assegurando que o cliente receba todos
+              assegurando que o cliente receba todos
               os direitos e compensações adequados.
             </span>
             <span className="w-4/5 mt-6">
@@ -85,7 +89,7 @@ export default function Home() {
               Confie seu caso nas mãos de um advogado que saberá a melhor
               maneira de te ajudar a ter seu direito garantido.
             </p>
-            <p className="text-dourado font-bold underline mt-2">
+            <p className="text-dourado font-bold underline mt-2 text-lg">
               Experiência comprovada em causas trabalhistas como:
             </p>
           </div>
@@ -123,7 +127,7 @@ export default function Home() {
             <span className="w-3/4 ml-20 mt-4">
               O{" "}
               <span className="font-bold bg-dourado">
-                WILLIANS ADVOGADOS, OAB.-------,
+                WILLIANS ADVOGADOS, OAB 989.878,
               </span>{" "}
               é o escritório especializado em Direito do Trabalho;
             </span>
@@ -252,8 +256,8 @@ export default function Home() {
             <div className=" flex w-1/2 h-full bg-forms bg-cover rounded-xl ml-6"></div>
           </div>
         </section>
-        <section className="flex w-full h-40 bg-gelo mt-8 border-b-2 border-azul-escuro border-solid">
-          <div className="flex justify-around w-full p-6">
+        <section className="flex w-full h-80 bg-gelo mt-8 flex-col">
+          <div className="flex justify-around w-full h-40 p-6 border-b-2 border-azul-escuro border-solid">
             <div className="h-20 w-30 flex items-center">
               <Image
                 className="h-8 w-8 mr-2"
@@ -292,6 +296,21 @@ export default function Home() {
                   08h às 18h de seg. à sexta-feira
                 </span>
               </div>
+            </div>
+          </div>
+          <div className="h-40 w-full flex justify-around">
+            <div className="h-full w-1/3 flex justify-center">
+              <Image className="object-contain" src={logoFooter} alt={"logoFooter"}></Image>
+            </div>
+            <div className="h-full w-1/3 flex flex-col justify-center items-center">
+              <span className="text-azul-escuro font-bold">Nossos endereços</span>
+              <span className="text-cinza">Rua Clementino Jarbas Neto, 997 - Sala 05 / SP - 05456-111</span>
+              <span className="text-cinza">Rua Fernandes De Jesus, 1050 - Itapecerica da Serra / SP - 33325-789</span>
+            </div>
+            <div className="h-full w-1/3 flex flex-col justify-center items-center">
+              <span className="text-azul-escuro font-bold">Willians Fernandes | José Willians</span>
+              <span className="text-cinza mb-2">Especialista em Direito do Trabalho</span>
+              <span className="text-cinza">Consultoria e Assessoria Trabalhista</span>
             </div>
           </div>
         </section>

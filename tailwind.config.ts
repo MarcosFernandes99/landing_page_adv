@@ -16,10 +16,7 @@ const config: Config = {
         "logo": "url('../../public/logo.png')",
         "insta": "url('../../public/insta.png')",
         "face": "url('../../public/face.png')"
-      },
-      // backgroundSize: {
-      //   "70%": "70%"
-      // },
+      },        
       colors: {
         "azul-escuro": "#011F38",
         "azul-semi-escuro": "#042e51",

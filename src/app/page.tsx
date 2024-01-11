@@ -7,6 +7,7 @@ import email from "../../public/email.png";
 import relogio from "../../public/relogio.png";
 import primeiraFoto from "../../public/primeira_foto.png"
 import logoFooter from "../../public/logo_footer.png"
+import segundaFoto from "../../public/segunda_foto.png"
 
 
 export default function Home() {
@@ -33,13 +34,14 @@ export default function Home() {
             </button>
           </div>
         </section>
-        <section className="flex h-4/5 bg-azul-semi-escuro">
-          <div className="flex flex-col w-2/5 h-full items-start ml-36 text-white justify-center">
-            <span className="mb-3 bg-logo w-40 h-40 bg-contain"></span>
-            <span className="mb-3 text-3xl font-bold">
+
+        <section className="flex flex-col md:flex-row h-4/5 bg-azul-semi-escuro">
+          <div className="flex flex-col w-full md:w-2/5 h-full items-center md:items-start text-white justify-center md:ml-36">
+            <span className="mb-3 bg-logo w-20 h-20 md:w-40 md:h-40 bg-contain"></span>
+            <span className="mb-3 text-[1.2rem] md:text-3xl font-bold text-center md:text-left">
               PROTEJA SEUS BENEFÍCIOS AGORA COM NOSSA ASSESSORIA ESPECIALIZADA!
             </span>
-            <span className="mb-3 text-base">
+            <span className="mb-3 text-base text-center md:text-left">
               Somos advogados especialistas em direito do trabalho e podemos te
               ajudar em garantir o seu direito.
             </span>
@@ -47,22 +49,25 @@ export default function Home() {
               Fale conosco pelo Whatsapp
             </button>
           </div>
-          <div className="flex h-full w-3/5">
-            <Image className="w-full object-contain" src={primeiraFoto} alt={"primeiraFoto"}></Image>
+          <div className="flex h-2/5 md:h-full w-full md:w-3/5">
+            <Image className="w-full h-full object-contain" src={primeiraFoto} alt={"primeiraFoto"}></Image>
           </div>
         </section>
-        <section className="flex w-full h-4/5">
-          <div className="flex w-1/2 h-full mt-20 bg-photo bg-contain bg-no-repeat bg-center"></div>
-          <div className="flex flex-col w-50% text-justify text-azul-escuro justify-center">
-            <span className="w-40 font-bold text-3xl">BENEFÍCIOS</span>
-            <span className="w-4/5 mt-6">
+        
+        <section className="flex flex-col md:flex-row w-full h-4/5">
+          <div className="flex h-[40%] md:w-1/2 md:h-full mt-5 md:mt-20">
+            <Image className="w-full h-full object-contain" src={segundaFoto} alt={"segunda foto"}></Image>
+          </div>
+          <div className="flex flex-col w-full md:w-50% text-justify text-azul-escuro justify-center ml-4 md:ml-0 mt-4 md:mt-0">
+            <span className="w-40 font-bold text-[1.5rem] md:text-3xl">BENEFÍCIOS</span>
+            <span className="w-4/5 mt-1 md:mt-6">
               Contratar um advogado trabalhista oferece proteção legal contra{" "}
               <span className="font-bold">
                 violações de direitos e práticas injustas no ambiente de
                 trabalho.;
               </span>
             </span>
-            <span className="w-4/5 mt-6">
+            <span className="w-4/5 mt-4 md:mt-6">
               Um advogado trabalhista pode ajudar na{" "}
               <span className="font-bold bg-dourado">
                 maximização de benefícios,
@@ -70,17 +75,18 @@ export default function Home() {
               assegurando que o cliente receba todos
               os direitos e compensações adequados.
             </span>
-            <span className="w-4/5 mt-6">
+            <span className="w-4/5 mt-4 md:mt-6">
               Profissionais experientes agilizam a resolução de conflitos,
               evitando prolongamentos desnecessários e reduzindo o impacto
               emocional e financeiro no cliente.
             </span>
-            <button className="mt-4 flex items-start bg-verde text-white w-1/5 justify-center p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
+            <button className="mt-4 flex items-start bg-verde text-white w-[50%] md:w-1/5 justify-center p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
               Fazer Avaliação
             </button>
           </div>
         </section>
-        <section className="flex flex-col bg-azul-escuro w-full h-4/5 mt-28 items-center">
+        
+        <section className="flex flex-col bg-azul-escuro w-full h-4/5 mt-36 md:mt-28 items-center">
           <div className="flex flex-col mt-28 w-1/3 items-center">
             <p className="text-dourado font-bold text-3xl">
               Veja como podemos te ajudar
@@ -120,6 +126,7 @@ export default function Home() {
             Falar com um advogado agora
           </button>
         </section>
+        
         <section className="flex h-3/4 w-full mt-12">
           <div className="h-3/4 w-2/4 bg-photo_about bg-contain bg-no-repeat mt-4 bg-center"></div>
           <div className="h-3/4 w-2/4 justify-center p-4 text-justify flex flex-col text-azul-escuro">

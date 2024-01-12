@@ -38,14 +38,14 @@ export default function Home() {
         <section className="flex flex-col md:flex-row h-4/5 bg-azul-semi-escuro">
           <div className="flex flex-col w-full md:w-2/5 h-full items-center md:items-start text-white justify-center md:ml-36">
             <span className="mb-3 bg-logo w-20 h-20 md:w-40 md:h-40 bg-contain"></span>
-            <span className="mb-3 text-[1.2rem] md:text-3xl font-bold text-center md:text-left">
+            <span className="mb-3 w-[90%] md:w-full text-[1.4rem] md:text-3xl font-bold text-center md:text-left">
               PROTEJA SEUS BENEFÍCIOS AGORA COM NOSSA ASSESSORIA ESPECIALIZADA!
             </span>
-            <span className="mb-3 text-base text-center md:text-left">
+            <span className="mb-3 w-[90%] md:w-full text-[0.9rem] md:text-base text-center md:text-left">
               Somos advogados especialistas em direito do trabalho e podemos te
               ajudar em garantir o seu direito.
             </span>
-            <button className="bg-verde p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
+            <button className="bg-verde text-[0.9rem] md:text-base p-2 md:p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
               Fale conosco pelo Whatsapp
             </button>
           </div>
@@ -60,14 +60,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col w-full md:w-50% text-justify text-azul-escuro justify-center ml-4 md:ml-0 mt-4 md:mt-0">
             <span className="w-40 font-bold text-[1.5rem] md:text-3xl">BENEFÍCIOS</span>
-            <span className="w-4/5 mt-1 md:mt-6">
+            <span className="w-4/5 mt-1 md:mt-6 text-[0.9rem] md:text-base">
               Contratar um advogado trabalhista oferece proteção legal contra{" "}
               <span className="font-bold">
                 violações de direitos e práticas injustas no ambiente de
                 trabalho.;
               </span>
             </span>
-            <span className="w-4/5 mt-4 md:mt-6">
+            <span className="w-4/5 mt-4 md:mt-6 text-[0.9rem] md:text-base">
               Um advogado trabalhista pode ajudar na{" "}
               <span className="font-bold bg-dourado">
                 maximização de benefícios,
@@ -75,58 +75,58 @@ export default function Home() {
               assegurando que o cliente receba todos
               os direitos e compensações adequados.
             </span>
-            <span className="w-4/5 mt-4 md:mt-6">
+            <span className="w-4/5 mt-4 md:mt-6 text-[0.9rem] md:text-base">
               Profissionais experientes agilizam a resolução de conflitos,
               evitando prolongamentos desnecessários e reduzindo o impacto
               emocional e financeiro no cliente.
             </span>
-            <button className="mt-4 flex items-start bg-verde text-white w-[50%] md:w-1/5 justify-center p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
+            <button className="mt-4 flex items-start text-[0.9rem] md:text-base bg-verde text-white w-[50%] md:w-1/5 justify-center p-2 md:p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
               Fazer Avaliação
             </button>
           </div>
         </section>
         
-        <section className="flex flex-col bg-azul-escuro w-full h-4/5 mt-36 md:mt-28 items-center">
-          <div className="flex flex-col mt-28 w-1/3 items-center">
-            <p className="text-dourado font-bold text-3xl">
+        <section className="flex flex-col bg-azul-escuro w-full h-full md:h-4/5 mt-28 items-center">
+          <div className="flex flex-col mt-5 md:mt-28 w-[90%] md:w-1/3 items-center text-center">
+            <p className="text-dourado font-bold text-[1.5rem] md:text-3xl">
               Veja como podemos te ajudar
             </p>
-            <p className="text-white mt-2">
+            <p className="text-white mt-2 text-[0.9rem] md:text-base">
               Confie seu caso nas mãos de um advogado que saberá a melhor
               maneira de te ajudar a ter seu direito garantido.
             </p>
-            <p className="text-dourado font-bold underline mt-2 text-lg">
+            <p className="text-dourado font-bold underline mt-2 text-[1rem] md:text-lg">
               Experiência comprovada em causas trabalhistas como:
             </p>
           </div>
-          <div className="flex w-full gap-4 mt-12 justify-center text-white">
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
+          <div className="flex flex-col md:flex-row w-full gap-4 mt-5 md:mt-12 justify-center text-white items-center">
+            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Recolhimento FGTS
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Reconhecimento do vínculo empregarício
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Pagamentos de horas extraordinárias
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Intervalo intrajornada
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Assédio moral
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Verbas atrasadas
             </span>
-            <span className="w-44 bg-azul-claro p-4 rounded-lg text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Acidente em serviço
             </span>
           </div>
-          <button className="bg-verde text-white p-4 mt-12 rounded-xl transition-transform transform hover:scale-105 duration-500">
+          <button className="bg-verde text-white  text-[0.9rem] md:text-base p-4 mt-5 md:mt-12 rounded-xl transition-transform transform hover:scale-105 duration-500">
             Falar com um advogado agora
           </button>
         </section>
-        
+
         <section className="flex h-3/4 w-full mt-12">
           <div className="h-3/4 w-2/4 bg-photo_about bg-contain bg-no-repeat mt-4 bg-center"></div>
           <div className="h-3/4 w-2/4 justify-center p-4 text-justify flex flex-col text-azul-escuro">

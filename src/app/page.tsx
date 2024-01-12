@@ -8,6 +8,7 @@ import relogio from "../../public/relogio.png";
 import primeiraFoto from "../../public/primeira_foto.png"
 import logoFooter from "../../public/logo_footer.png"
 import segundaFoto from "../../public/segunda_foto.png"
+import terceiraFoto from "../../public/terceira_foto.jpg"
 
 
 export default function Home() {
@@ -100,45 +101,47 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row w-full gap-4 mt-5 md:mt-12 justify-center text-white items-center">
-            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:h-[6rem] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Recolhimento FGTS
             </span>
-            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:h-[6rem] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Reconhecimento do vínculo empregarício
             </span>
-            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:h-[6rem] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Pagamentos de horas extraordinárias
             </span>
-            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:h-[6rem] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Intervalo intrajornada
             </span>
-            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:h-[6rem] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Assédio moral
             </span>
-            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:h-[6rem] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Verbas atrasadas
             </span>
-            <span className="w-[60%] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
+            <span className="w-[60%] md:h-[6rem] md:w-44 text-[0.9rem] md:text-base bg-azul-claro p-2 md:p-4 rounded-lg text-start md:text-center transition-transform transform hover:translate-y-[-10px]">
               Acidente em serviço
             </span>
           </div>
-          <button className="bg-verde text-white  text-[0.9rem] md:text-base p-4 mt-5 md:mt-12 rounded-xl transition-transform transform hover:scale-105 duration-500">
+          <button className="bg-verde text-white text-[0.9rem] md:text-base p-4 mt-5 md:mt-12 rounded-xl transition-transform transform hover:scale-105 duration-500">
             Falar com um advogado agora
           </button>
         </section>
 
-        <section className="flex h-3/4 w-full mt-12">
-          <div className="h-3/4 w-2/4 bg-photo_about bg-contain bg-no-repeat mt-4 bg-center"></div>
-          <div className="h-3/4 w-2/4 justify-center p-4 text-justify flex flex-col text-azul-escuro">
-            <h3 className="ml-20 text-3xl font-bold">Sobre nós</h3>
-            <span className="w-3/4 ml-20 mt-4">
+        <section className="flex flex-col-reverse md:flex-row h-3/4 w-full mt-56 md:mt-12">
+          <div className="h-[40%] md:h-3/4 md:w-2/4 mt-20 md:mt-6">
+          <Image className="w-full h-full object-contain" src={terceiraFoto} alt={"terceiraFoto"}></Image>
+          </div>
+          <div className="h-3/4 w-full md:w-2/4 justify-center items-center md:items-start p-4 text-justify flex flex-col text-azul-escuro">
+            <h3 className="w-[90%] md:w-3/4 mt-8 ml-0 md:ml-20 text-3xl font-bold">Sobre nós</h3>
+            <span className="w-[90%] mt-6 md:w-3/4 ml-0 md:ml-20 text-[0.9rem] md:text-base">
               O{" "}
               <span className="font-bold bg-dourado">
                 WILLIANS ADVOGADOS, OAB 989.878,
               </span>{" "}
               é o escritório especializado em Direito do Trabalho;
             </span>
-            <span className="w-3/4 ml-20 mt-4">
+            <span className="w-[90%] md:w-3/4 mt-4 ml-0 md:ml-20 text-[0.9rem] md:text-base">
               Temos nosso escritório{" "}
               <span className="font-bold">
                 localizado em São Paulo e Itapecerica da Serra,
@@ -146,7 +149,7 @@ export default function Home() {
               com atuação presencial e online para acelerar a resolução das
               causas e prezar pelo conforto dos nossos clientes.
             </span>
-            <span className="w-3/4 ml-20 mt-4">
+            <span className="w-[90%] md:w-3/4 ml-0 md:ml-20 mt-4 text-[0.9rem] md:text-base">
               Além do aparato técnico e conhecimento para enfrentamento de
               problemas judiciais, temos por objetivo, evitar o surgimento de
               novos processos, atuando na prevenção, oferencendo todo o suporte
@@ -154,11 +157,12 @@ export default function Home() {
               e, sabendo os limites e reflexos de sua atuação, melhorando as
               relações sociais e pacificando os conflitos.
             </span>
-            <button className="flex ml-20 bg-verde text-white mt-8 p-4 rounded-xl w-72 justify-center transition-transform transform hover:scale-105 duration-500">
+            <button className="flex ml-0 md:ml-20 bg-verde text-[0.9rem] md:text-base text-white mt-8 p-2 md:p-4 rounded-xl w-72 justify-center transition-transform transform hover:scale-105 duration-500">
               Falar com um advogado agora
             </button>
           </div>
         </section>
+
         <section className="h-3/4 w-full flex flex-col bg-azul-escuro items-center">
           <h3 className="text-white font-bold text-3xl mt-16">
             CLIENTES QUE APROVAM E INDICAM NOSSO TRABALHO

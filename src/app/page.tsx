@@ -9,6 +9,7 @@ import primeiraFoto from "../../public/primeira_foto.png"
 import logoFooter from "../../public/logo_footer.png"
 import segundaFoto from "../../public/segunda_foto.png"
 import terceiraFoto from "../../public/terceira_foto.jpg"
+import fotoForms from "../../public/forms.jpg"
 
 
 export default function Home() {
@@ -163,12 +164,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="h-3/4 w-full flex flex-col bg-azul-escuro items-center">
-          <h3 className="text-white font-bold text-3xl mt-16">
+        <section className="h-3/4 w-full flex flex-col bg-azul-escuro items-center mt-5 md:mt-0">
+          <h3 className="text-white font-bold md:text-3xl text-[1.4rem] mt-5 md:mt-16 text-center">
             CLIENTES QUE APROVAM E INDICAM NOSSO TRABALHO
           </h3>
-          <div className="flex gap-6 h-68 w-2/3 mt-12 justify-center">
-            <div className="flex flex-col w-56 bg-white rounded-2xl p-4">
+          <div className="flex gap-6 h-full w-full md:max-w-screen-lg md:mx-auto mt-12 md:justify-center overflow-x-auto">
+            <div className="flex flex-col flex-shrink-0 w-[80%] md:w-56 bg-white rounded-2xl p-4 ml-8 md:ml-0">
               <div className="flex w-full justify-between items-center">
                 <Image className="w-20" src={avaliacao} alt="estrelas"></Image>
                 <Image className="h-8 w-8 " src={google} alt="google"></Image>
@@ -184,7 +185,7 @@ export default function Home() {
                 <span className="font-bold">João Dias</span>
               </div>
             </div>
-            <div className="flex flex-col w-56 bg-white rounded-2xl p-4">
+            <div className="flex flex-col flex-shrink-0 w-[80%] md:w-56 bg-white rounded-2xl p-4 ml-8 md:ml-0">
               <div className="flex w-full justify-between items-center">
                 <Image className="w-20" src={avaliacao} alt="estrelas"></Image>
                 <Image className="h-8 w-8 " src={google} alt="google"></Image>
@@ -199,7 +200,7 @@ export default function Home() {
                 <span className="font-bold">Carla Santos</span>
               </div>
             </div>
-            <div className="flex flex-col w-56 bg-white rounded-2xl p-4">
+            <div className="flex flex-col flex-shrink-0 w-[90%] md:w-56 bg-white rounded-2xl p-4 ml-8 md:ml-0">
               <div className="flex w-full justify-between items-center">
                 <Image className="w-20" src={avaliacao} alt="estrelas"></Image>
                 <Image className="h-8 w-8 " src={google} alt="google"></Image>
@@ -214,7 +215,7 @@ export default function Home() {
                 <span className="font-bold">Rodrigo Farias</span>
               </div>
             </div>
-            <div className="flex flex-col w-56 bg-white rounded-2xl p-4">
+            <div className="flex flex-col flex-shrink-0 w-[80%] md:w-56 bg-white rounded-2xl p-4 mx-8 md:mx-0">
               <div className="flex w-full justify-between items-center">
                 <Image className="w-20" src={avaliacao} alt="estrelas"></Image>
                 <Image className="h-8 w-8 " src={google} alt="google"></Image>
@@ -231,42 +232,46 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="text-white bg-verde p-4 rounded-xl mt-8 transition-transform transform hover:scale-105 duration-500">
+          <button className="text-white bg-verde p-4 rounded-xl mt-8 mb-5 transition-transform transform hover:scale-105 duration-500">
             Falar com um advogado agora
           </button>
         </section>
-        <section className="flex h-3/4 w-full mt-10 justify-center">
-          <div className="flex h-full w-11/12 p-4 text-azul-escuro bg-PowderBlue rounded-3xl">
-            <div className="flex flex-col w-1/2">
-              <span className="h-30 text-justify text-3xl font-bold p-4">
+
+        <section className="flex md:flex-row h-3/4 w-full md:mt-10 justify-center">
+          <div className="flex flex-col-reverse md:flex-row h-full md:w-11/12 w-full p-4 text-azul-escuro bg-PowderBlue md:rounded-3xl">
+            <div className="flex flex-col w-full md:w-1/2">
+              <span className="h-30 text-justify md:text-3xl text-[1rem] font-bold p-2 md:p-4 md:mt-12">
                 Nossa missão é assegurar que nossos clientes tenham o seu
                 direito trabalhista estabelecido de maneira justa, através de um
                 acompanhamento jurídico de qualidade.
               </span>
-              <form className="flex flex-col gap-2 w-5/6 p-4" id="" action="">
+              <form className="flex flex-col gap-2 w-5/6 md:p-4" id="" action="">
                 <input
-                  className="rounded-xl p-2"
+                  className="rounded-xl p-1 md:p-2 mt-3"
                   placeholder="Digite seu nome"
                   type="text"
                 />
                 <input
-                  className="rounded-xl p-2"
+                  className="rounded-xl p-1 md:p-2"
                   placeholder="Digite seu número de celular"
                   type="text"
                 />
                 <input
-                  className="rounded-xl p-2"
+                  className="rounded-xl p-1 md:p-2"
                   placeholder="Digite seu melhor E-mail"
                   type="text"
                 />
-                <button className="bg-verde text-white p-2 mt-6 rounded-xl transition-transform transform hover:scale-105 duration-500">
+                <button className="bg-verde text-white p-1 md:p-2 mt-3 md:mt-6 rounded-xl transition-transform transform hover:scale-105 duration-500">
                   Falar com um advogado
                 </button>
               </form>
             </div>
-            <div className=" flex w-1/2 h-full bg-forms bg-cover rounded-xl ml-6"></div>
+            <div className="md:flex md:w-1/2 w-full md:ml-6 p-4">
+            <Image className="w-full h-full object-contain md:mt-0 rounded-full" src={fotoForms} alt={"fotoForms"}></Image>
+            </div>
           </div>
         </section>
+        
         <section className="flex w-full h-80 bg-gelo mt-8 flex-col">
           <div className="flex justify-around w-full h-40 p-6 border-b-2 border-azul-escuro border-solid">
             <div className="h-20 w-30 flex items-center">

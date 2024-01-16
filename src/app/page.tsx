@@ -232,7 +232,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="text-white bg-verde p-4 rounded-xl mt-8 mb-5 transition-transform transform hover:scale-105 duration-500">
+          <button className="text-white bg-verde p-2 md:p-4 rounded-xl mt-8 mb-5 transition-transform transform hover:scale-105 duration-500">
             Falar com um advogado agora
           </button>
         </section>

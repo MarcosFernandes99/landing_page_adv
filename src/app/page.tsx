@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <main className="h-screen font-sans">
-        <section className="flex h-14 md:h-20 w-full p-1 bg-azul-escuro text-white fixed">
+        <section className="flex h-14 md:h-20 w-full p-1 bg-azul-escuro text-white">
           <div className="hidden md:flex h-full w-1/2 justify-start md:items-center md:ml-40">
             <button className="md:mr-8 transition-transform transform hover:scale-110">
               Serviços
@@ -39,7 +39,7 @@ export default function Home() {
 
         <section className="flex flex-col md:flex-row h-[90%] bg-azul-semi-escuro">
           <div className="flex flex-col w-full md:w-2/5 h-full items-center md:items-start text-white justify-center md:ml-36">
-            <span className="bg-logo w-20 h-20 md:w-40 md:h-40 bg-contain mt-16"></span>
+            <span className="bg-logo w-20 h-20 md:w-40 md:h-40 bg-contain"></span>
             <span className="mb-3 w-[90%] md:w-full text-[1.4rem] md:text-3xl font-bold text-center md:text-left">
               PROTEJA SEUS BENEFÍCIOS AGORA COM NOSSA ASSESSORIA ESPECIALIZADA!
             </span>
@@ -51,13 +51,13 @@ export default function Home() {
               Fale conosco pelo Whatsapp
             </button>
           </div>
-          <div className="flex h-[30%] md:h-full w-full md:w-3/5">
+          <div className="flex h-[40%] md:h-full w-full md:w-3/5">
             <Image className="w-full h-full object-contain" src={primeiraFoto} alt={"primeiraFoto"}></Image>
           </div>
         </section>
         
         <section className="flex flex-col md:flex-row w-full h-[90%]">
-          <div className="flex h-[30%] md:w-1/2 md:h-full mt-5 md:mt-20">
+          <div className="flex h-[40%] md:w-1/2 md:h-full mt-5 md:mt-20">
             <Image className="w-full h-full object-contain" src={segundaFoto} alt={"segunda foto"}></Image>
           </div>
           <div className="flex flex-col w-full md:w-50% text-justify text-azul-escuro justify-center ml-4 md:ml-0 mt-4 md:mt-0">

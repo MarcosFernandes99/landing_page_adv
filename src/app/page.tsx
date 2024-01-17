@@ -5,12 +5,12 @@ import avaliacao from "../../public/avaliacao.png";
 import telefone from "../../public/telefone.png";
 import email from "../../public/email.png";
 import relogio from "../../public/relogio.png";
-import primeiraFoto from "../../public/primeira_foto.png"
-import logoFooter from "../../public/logo_footer.png"
-import segundaFoto from "../../public/segunda_foto.png"
-import terceiraFoto from "../../public/terceira_foto.jpg"
-import fotoForms from "../../public/forms.jpg"
-
+import primeiraFoto from "../../public/primeira_foto.png";
+import logoFooter from "../../public/logo_footer.png";
+import segundaFoto from "../../public/segunda_foto.png";
+import terceiraFoto from "../../public/terceira_foto.jpg";
+import fotoForms from "../../public/forms.jpg";
+import whats from "../../public/whatsap.png";
 
 export default function Home() {
   return (
@@ -28,10 +28,10 @@ export default function Home() {
               Contato
             </button>
           </div>
-          <div className="flex h-full w-full md:w-1/2 md:justify-end md:items-center justify-center">
-            <button className="bg-insta h-5 w-5 bg-cover transition-transform transform hover:scale-125 mt-auto md:mt-0"></button>
-            <button className="mx-8 bg-face h-5 w-5 bg-cover transition-transform transform hover:scale-125 mt-auto md:mt-0"></button>
-            <button className="md:mx-32 border h-10 border-white border-solid p-2 rounded-lg transition-transform transform hover:scale-110 mt-auto md:mt-0">
+          <div className="flex h-full w-full md:w-1/2 md:justify-end items-center justify-center">
+            <button className="bg-insta h-5 w-5 bg-cover transition-transform transform hover:scale-125"></button>
+            <button className="mx-8 bg-face h-5 w-5 bg-cover transition-transform transform hover:scale-125"></button>
+            <button className="md:mx-32 border h-10 border-white border-solid p-2 rounded-lg transition-transform transform hover:scale-110">
               Orçamento
             </button>
           </div>
@@ -47,21 +47,37 @@ export default function Home() {
               Somos advogados especialistas em direito do trabalho e podemos te
               ajudar em garantir o seu direito.
             </span>
-            <button className="bg-verde text-[0.9rem] md:text-base p-2 md:p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
+            <button className="bg-verde flex text-[0.9rem] md:text-base p-2 md:p-4 rounded-lg transition-transform transform hover:scale-105 duration-500 items-center">
+              <Image
+                className="h-3 md:h-5 w-3 md:w-5 mr-1 object-contain"
+                src={whats}
+                alt={"whats"}
+                style={{ filter: "brightness(0) invert(1)" }}
+              ></Image>
               Fale conosco pelo Whatsapp
             </button>
           </div>
           <div className="flex h-[40%] md:h-full w-full md:w-3/5">
-            <Image className="w-full h-full object-contain" src={primeiraFoto} alt={"primeiraFoto"}></Image>
+            <Image
+              className="w-full h-full object-contain"
+              src={primeiraFoto}
+              alt={"primeiraFoto"}
+            ></Image>
           </div>
         </section>
-        
+
         <section className="flex flex-col md:flex-row w-full h-[90%]">
           <div className="flex h-[40%] md:w-1/2 md:h-full mt-5 md:mt-20">
-            <Image className="w-full h-full object-contain" src={segundaFoto} alt={"segunda foto"}></Image>
+            <Image
+              className="w-full h-full object-contain"
+              src={segundaFoto}
+              alt={"segunda foto"}
+            ></Image>
           </div>
           <div className="flex flex-col w-full md:w-50% text-justify text-azul-escuro justify-center ml-4 md:ml-0 mt-4 md:mt-0">
-            <span className="w-40 font-bold text-[1.5rem] md:text-3xl">BENEFÍCIOS</span>
+            <span className="w-40 font-bold text-[1.5rem] md:text-3xl">
+              BENEFÍCIOS
+            </span>
             <span className="w-4/5 mt-1 md:mt-6 text-[0.9rem] md:text-base">
               Contratar um advogado trabalhista oferece proteção legal contra{" "}
               <span className="font-bold">
@@ -74,20 +90,26 @@ export default function Home() {
               <span className="font-bold bg-dourado">
                 maximização de benefícios,
               </span>{" "}
-              assegurando que o cliente receba todos
-              os direitos e compensações adequados.
+              assegurando que o cliente receba todos os direitos e compensações
+              adequados.
             </span>
             <span className="w-4/5 mt-4 md:mt-6 text-[0.9rem] md:text-base">
               Profissionais experientes agilizam a resolução de conflitos,
               evitando prolongamentos desnecessários e reduzindo o impacto
               emocional e financeiro no cliente.
             </span>
-            <button className="mt-4 flex items-start text-[0.9rem] md:text-base bg-verde text-white w-[50%] md:w-1/5 justify-center p-2 md:p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
+            <button className="mt-4 flex items-center text-[0.9rem] md:text-base bg-verde text-white w-[50%] md:w-[25%] justify-center p-2 md:p-4 rounded-lg transition-transform transform hover:scale-105 duration-500">
+              <Image
+                className="h-3 md:h-5 w-3 md:w-5 mr-2 object-contain"
+                src={whats}
+                alt={"whats"}
+                style={{ filter: "brightness(0) invert(1)" }}
+              ></Image>
               Fazer Avaliação
             </button>
           </div>
         </section>
-        
+
         <section className="flex flex-col bg-azul-escuro w-full h-max md:h-4/5 mt-28 items-center">
           <div className="flex flex-col mt-5 md:mt-28 w-[90%] md:w-1/3 items-center text-center">
             <p className="text-dourado font-bold text-[1.5rem] md:text-3xl">
@@ -131,10 +153,16 @@ export default function Home() {
 
         <section className="flex flex-col-reverse md:flex-row h-[90%] w-full mt-56 md:mt-12">
           <div className="h-[40%] md:h-3/4 md:w-2/4 mt-20 md:mt-6 ml-8">
-          <Image className="md:w-full w-[90%] h-full object-contain" src={terceiraFoto} alt={"terceiraFoto"}></Image>
+            <Image
+              className="md:w-full w-[90%] h-full object-contain"
+              src={terceiraFoto}
+              alt={"terceiraFoto"}
+            ></Image>
           </div>
           <div className="h-3/4 w-full md:w-2/4 justify-center items-center md:items-start p-4 text-justify flex flex-col text-azul-escuro">
-            <h3 className="w-[90%] md:w-3/4 md:mt-0 ml-0 md:ml-20 text-3xl font-bold">Sobre nós</h3>
+            <h3 className="w-[90%] md:w-3/4 md:mt-0 ml-0 md:ml-20 text-3xl font-bold">
+              Sobre nós
+            </h3>
             <span className="w-[90%] mt-6 md:w-3/4 ml-0 md:ml-20 text-[0.9rem] md:text-base">
               O{" "}
               <span className="font-bold bg-dourado">
@@ -245,7 +273,11 @@ export default function Home() {
                 direito trabalhista estabelecido de maneira justa, através de um
                 acompanhamento jurídico de qualidade.
               </span>
-              <form className="flex flex-col gap-2 w-5/6 md:p-4" id="" action="">
+              <form
+                className="flex flex-col gap-2 w-5/6 md:p-4"
+                id=""
+                action=""
+              >
                 <input
                   className="rounded-xl p-1 md:p-2 mt-3"
                   placeholder="Digite seu nome"
@@ -267,11 +299,15 @@ export default function Home() {
               </form>
             </div>
             <div className="md:flex md:w-1/2 w-full md:ml-6 p-4">
-            <Image className="w-full h-full object-contain mt-5 md:mt-0 rounded-full" src={fotoForms} alt={"fotoForms"}></Image>
+              <Image
+                className="w-full h-full object-contain mt-5 md:mt-0 rounded-full"
+                src={fotoForms}
+                alt={"fotoForms"}
+              ></Image>
             </div>
           </div>
         </section>
-        
+
         <section className="flex w-full md:h-80 h-max bg-gelo md:mt-8 mt-24 flex-col">
           <div className="flex flex-col md:flex-row md:justify-around w-full h-max md:h-40 p-6 border-b-2 border-azul-escuro border-solid">
             <div className="w-30 flex items-center mb-4">
@@ -316,17 +352,34 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col md:flex-row md:justify-around">
             <div className="h-40 md:w-1/3 w-full flex md:justify-center mt-5 mb-5">
-              <Image className="object-contain" src={logoFooter} alt={"logoFooter"}></Image>
+              <Image
+                className="object-contain"
+                src={logoFooter}
+                alt={"logoFooter"}
+              ></Image>
             </div>
             <div className="h-full md:w-1/3 w-[90%] ml-2 flex flex-col justify-center md:items-center">
-              <span className="text-azul-escuro font-bold">Nossos endereços</span>
-              <span className="text-cinza text-[0.9rem] md:text-base">Rua Clementino Jarbas Neto, 997 - Sala 05 / SP - 05456-111</span>
-              <span className="text-cinza text-[0.9rem] md:text-base">Rua Fernandes De Jesus, 1050 - Itapecerica da Serra / SP - 33325-789</span>
+              <span className="text-azul-escuro font-bold">
+                Nossos endereços
+              </span>
+              <span className="text-cinza text-[0.9rem] md:text-base">
+                Rua Clementino Jarbas Neto, 997 - Sala 05 / SP - 05456-111
+              </span>
+              <span className="text-cinza text-[0.9rem] md:text-base">
+                Rua Fernandes De Jesus, 1050 - Itapecerica da Serra / SP -
+                33325-789
+              </span>
             </div>
             <div className="h-full md:w-1/3 w-[90%] ml-2 flex flex-col justify-center md:items-center mt-4">
-              <span className="text-azul-escuro font-bold">Willians Fernandes | José Willians</span>
-              <span className="text-cinza text-[0.9rem] md:text-base md:mb-2">Especialista em Direito do Trabalho</span>
-              <span className="text-cinza text-[0.9rem] md:text-base">Consultoria e Assessoria Trabalhista</span>
+              <span className="text-azul-escuro font-bold">
+                Willians Fernandes | José Willians
+              </span>
+              <span className="text-cinza text-[0.9rem] md:text-base md:mb-2">
+                Especialista em Direito do Trabalho
+              </span>
+              <span className="text-cinza text-[0.9rem] md:text-base">
+                Consultoria e Assessoria Trabalhista
+              </span>
             </div>
           </div>
         </section>

@@ -1,3 +1,5 @@
+'use client'
+
 import "../app/globals.css";
 import Image from "next/image";
 import google from "../../public/google.png";
@@ -11,8 +13,16 @@ import segundaFoto from "../../public/segunda_foto.png";
 import terceiraFoto from "../../public/terceira_foto.jpg";
 import fotoForms from "../../public/forms.jpg";
 import whats from "../../public/whatsap.png";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 export default function Home() {
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+  
   return (
     <>
       <main className="h-screen font-sans">
@@ -266,7 +276,7 @@ export default function Home() {
         </section>
 
         <section className="flex md:flex-row h-3/4 w-full md:mt-10 justify-center">
-          <div className="flex flex-col-reverse md:flex-row h-max md:w-11/12 w-full p-4 text-azul-escuro bg-PowderBlue md:rounded-3xl">
+          <div className="flex flex-col-reverse md:flex-row h-max md:w-11/12 w-full p-4 text-azul-escuro bg-PowderBlue md:rounded-3xl" data-aos="flip-right">
             <div className="flex flex-col w-full md:w-1/2">
               <span className="h-30 text-justify md:text-3xl text-[1rem] font-bold p-2 md:p-4 md:mt-12">
                 Nossa missão é assegurar que nossos clientes tenham o seu
